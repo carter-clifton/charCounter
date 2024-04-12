@@ -1,3 +1,7 @@
+#charArea {
+  transition: 0.5s;
+}
+
 textarea {
   
   word-break: break-all;
@@ -42,15 +46,42 @@ textarea {
 body {
   background: #15222E;
   color: #fcbe24;
-  padding: 5vh 5vh;
+  padding: 5vh;
   margin: 0;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: monospace;
+  transition: 0.5s;
 }
 
 h2 {
   font-size: x-large;
+}
+
+input {
+  font-size: x-large;
+  border: 0;
+  border-radius: 5px;
+  color: #fcbe24;
+  background-color: #101a24;
+  font-weight: bold;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.characterContainer {
+  padding-bottom: 2vh;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }

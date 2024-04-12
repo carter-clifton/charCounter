@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body id="body">
     <div class="mainContainer">
       <div class="subContainer counterContainer">
         <h1 id="chars">0</h1>
+      </div>
+      <div class="subContainer characterContainer">
+        <input id="characterLimitInput" type="number" value="1000">
       </div>
       <div class="subContainer inputContainer">
         <textarea id="charArea" onkeyup="updateCharacters()" rows="14" cols="10"></textarea>
